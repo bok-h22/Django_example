@@ -1,0 +1,458 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyODpaHxpkp8bMONpxADk3A9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/bok-h22/Django_example/blob/master/BAEKJOON_LEVEL_1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#1.\n",
+        "Hello World!를 출력하시오."
+      ],
+      "metadata": {
+        "id": "EpBc74B1wD_M"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "n9IDNtNlvpIu"
+      },
+      "outputs": [],
+      "source": [
+        "print(\"Hello World!\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#2.\n",
+        "두 정수 A와 B를 입력받은 다음, 사칙연산을 출력하는 프로그램을 작성하시오."
+      ],
+      "metadata": {
+        "id": "ERPmpzCBwR05"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. A + B"
+      ],
+      "metadata": {
+        "id": "EG0qmyHlwl5R"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a, b = map(int, input().split())\n",
+        "print(a+b)"
+      ],
+      "metadata": {
+        "id": "-6e1mxE7wxO9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. A - B"
+      ],
+      "metadata": {
+        "id": "-zq_Sz2kwnib"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a, b = map(int, input().split())\n",
+        "print(a-b)"
+      ],
+      "metadata": {
+        "id": "Yb_D0JCuwx_y"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. A X B"
+      ],
+      "metadata": {
+        "id": "jdeJWqUCwphN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a, b = map(int, input().split())\n",
+        "print(a*b)"
+      ],
+      "metadata": {
+        "id": "PxerrVv6wye7"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. A / B"
+      ],
+      "metadata": {
+        "id": "yWkQiDyFwqvh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a, b = map(int, input().split())\n",
+        "print(a/b)"
+      ],
+      "metadata": {
+        "id": "GKrFuejkwy7d"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5. 통합"
+      ],
+      "metadata": {
+        "id": "JuSvjjYTxK70"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a, b = map(int, input().split())\n",
+        "print(a+b)\n",
+        "print(a-b)\n",
+        "print(a*b)\n",
+        "print(int(a/b))\n",
+        "print(a%b)"
+      ],
+      "metadata": {
+        "id": "eD5opdJmxMcz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#3.\n",
+        "준하는 사이트에 회원가입을 하다가 joonas라는 아이디가 이미 존재하는 것을 보고 놀랐다. 준하는 놀람을 ??!로 표현한다. 준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어졌을 때, 놀람을 표현하는 프로그램을 작성하시오."
+      ],
+      "metadata": {
+        "id": "opav_-NvwkpP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input()\n",
+        "print(name+\"??!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ubn2Ln8FypAb",
+        "outputId": "e0a0b593-f76e-414a-c9f8-40e2991fdbac"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "joonas\n",
+            "joonas??!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#4.\n",
+        "ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 도착한 팀 레드시프트 일행은 눈을 믿을 수 없었다. 공항의 대형 스크린에 올해가 2562년이라고 적혀 있던 것이었다.\n",
+        "\n",
+        "불교 국가인 태국은 불멸기원(佛滅紀元), 즉 석가모니가 열반한 해를 기준으로 연도를 세는 불기를 사용한다. 반면, 우리나라는 서기 연도를 사용하고 있다. 불기 연도가 주어질 때 이를 서기 연도로 바꿔 주는 프로그램을 작성하시오."
+      ],
+      "metadata": {
+        "id": "UWyW98bOwfwQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year = int(input())\n",
+        "\n",
+        "print(year-543)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5869CV-Dy6YD",
+        "outputId": "d3ab6e1d-fe2e-4518-85c8-153cc61c49b6"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2541\n",
+            "1998\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#5.\n",
+        "(A+B)%C는 ((A%C) + (B%C))%C 와 같을까?\n",
+        "\n",
+        "(A×B)%C는 ((A%C) × (B%C))%C 와 같을까?\n",
+        "\n",
+        "세 수 A, B, C가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오."
+      ],
+      "metadata": {
+        "id": "j1dXTzLSzpab"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A, B, C = map(int, input().split())\n",
+        "\n",
+        "print((A+B)%C)\n",
+        "print(((A%C) + (B%C))%C)\n",
+        "print((A*B)%C)\n",
+        "print(((A%C)*(B%C))%C)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1qhJa9Wfzo7D",
+        "outputId": "6339fb23-a289-4e4e-af78-94dc3f598ca4"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5 8 4\n",
+            "1\n",
+            "1\n",
+            "0\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#6.\n",
+        "(세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.\n",
+        "\n",
+        "\n",
+        "![image.png](data:image/png;base64,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)\n",
+        "\n",
+        "(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오."
+      ],
+      "metadata": {
+        "id": "LBEqQAd-0SL5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input())\n",
+        "B = input()\n",
+        "\n",
+        "print(A*int(B[-1]))\n",
+        "print(A*int(B[-2]))\n",
+        "print(A*int(B[-3]))\n",
+        "print(A*int(B))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dRbM6ksw0bx3",
+        "outputId": "43a453c5-feb1-45b9-ebcd-5ea5a3122f39"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "123 456\n",
+            "738\n",
+            "615\n",
+            "492\n",
+            "56088\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#7.\n",
+        "꼬마 정민이는 이제 A + B 정도는 쉽게 계산할 수 있다. 이제 A + B + C를 계산할 차례이다!"
+      ],
+      "metadata": {
+        "id": "vHzH8dhJ2yVW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A, B, C = map(int, input().split())\n",
+        "print(A+B+C)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 349
+        },
+        "id": "gwrjgJ5n237y",
+        "outputId": "673f76f0-66d9-4fa1-b6af-4d9acf8179f6"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-26-f2689924c7d1>\u001b[0m in \u001b[0;36m<cell line: 1>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mA\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mB\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mC\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mmap\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msplit\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mA\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mB\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mC\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m    849\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    850\u001b[0m             )\n\u001b[0;32m--> 851\u001b[0;31m         return self._input_request(str(prompt),\n\u001b[0m\u001b[1;32m    852\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    853\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_header\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m    893\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    894\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 895\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    896\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    897\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#8.\n",
+        "아래 예제와 같이 고양이를 출력하시오."
+      ],
+      "metadata": {
+        "id": "LOu11xSA3v_4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"\"\"\\\\    /\\\\\n",
+        " )  ( ')\n",
+        "(  /  )\n",
+        " \\\\(__)|\"\"\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TZzR5eVO29jj",
+        "outputId": "df5344c4-bd29-4723-8d43-c36249fe9ef0"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\\    /\\\n",
+            " )  ( ')\n",
+            "(  /  )\n",
+            " \\(__)|\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#9.\n",
+        "아래 예제와 같이 개를 출력하시오."
+      ],
+      "metadata": {
+        "id": "Ig_Tzh4w32kb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('''|\\\\_/|\n",
+        "|q p|   /}\n",
+        "( 0 )\"\"\"\\\\\n",
+        "|\"^\"`    |\n",
+        "||_/=\\\\\\\\__|''')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4W8ZA9Rq3Ozp",
+        "outputId": "c07e3f69-1b34-45f2-b5e3-30e2d54a7705"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "|\\_/|\n",
+            "|q p|   /}\n",
+            "( 0 )\"\"\"\\\n",
+            "|\"^\"`    |\n",
+            "||_/=\\\\__|\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
